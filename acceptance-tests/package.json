@@ -2,5 +2,8 @@
   "name": "acceptance-tests",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@cucumber/cucumber": "^7.0.0"
+  }
 }
