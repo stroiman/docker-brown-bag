@@ -6,10 +6,6 @@ class World {
     this.log = log
     this.parameters = parameters
   }
-
-  ensureNotLoggedIn() {
-    console.log("Logging out");
-  };
 }
 
 setWorldConstructor(World);
