@@ -1,6 +1,8 @@
 const { Given, When, Then } = require("@cucumber/cucumber");
 
-Given('I am not logged in', () => {});
+Given('I am not logged in', function () {
+  this.ensureNotLoggedIn();
+});
 
 When('I create a user with email {string}', (email) => {
   return "pending";
