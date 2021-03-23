@@ -1,4 +1,4 @@
-const { When, Then } = require("@cucumber/cucumber");
+import { When, Then } from "@cucumber/cucumber";
 
 When("I place an order with the following items", (table) => "pending");
 

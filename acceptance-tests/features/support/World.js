@@ -1,5 +1,5 @@
-const { setWorldConstructor } = require("@cucumber/cucumber");
-const { Product } = require("./entities/Product");
+import setWorldConstructor from "@cucumber/cucumber";
+import { Product } from "./entities/Product";
 
 class World {
   constructor({ attach, log, parameters }) {

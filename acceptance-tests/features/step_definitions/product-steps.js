@@ -1,6 +1,6 @@
-const { Given, When, Then } = require("@cucumber/cucumber");
-const _ = require('lodash');
-const { Money, Product } = require("../support/entities/Product");
+import { Given, When, Then } from "@cucumber/cucumber";
+import _ from 'lodash';
+import { Money, Product } from "../support/entities/Product";
 
 const parseMoney = input => {
   const matches = input.match(/^([A-Z]+) (\d+)$/);

@@ -1,4 +1,4 @@
-const _ = require('lodash');
+import _ from 'lodash';
 
 const isString = input => typeof(input) === "string";
 const isNumber = input => typeof(input) === "number";
@@ -20,17 +20,15 @@ const createDto = (spec) => function(data) {
   }
 }
 
-const Money = createDto({
+export const Money = createDto({
   currency: isCurrency,
   amount: isNumber
 });
 
 const isMoney = isInstanceOf(Money);
 
-const Product = createDto({
+export const Product = createDto({
   sku: isString,
   name: isString,
   price: isMoney
 });
-
-module.exports = { Money, Product }
