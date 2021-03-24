@@ -1,5 +1,3 @@
-import * as cucumber from "@cucumber/cucumber";
-
-export default {
+module.exports = {
   default: '--publish-quiet'
 };

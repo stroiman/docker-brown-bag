@@ -1,4 +1,4 @@
-import setWorldConstructor from "@cucumber/cucumber";
+import { setWorldConstructor } from "@cucumber/cucumber";
 import { Product } from "./entities/Product";
 
 class World {
@@ -9,8 +9,9 @@ class World {
   }
 
   addProducts(products) {
+    console.log("*******************", products);
     for(const product of products) {
-      if (!product instanceof Product) {
+      if (!(product instanceof Product)) {
         throw new TypeError("Expected Product type");
       }
     }

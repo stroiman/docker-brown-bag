@@ -1,6 +1,5 @@
 {
   "name": "acceptance-tests",
-  "type": "module",
   "version": "1.0.0",
   "main": "index.js",
   "license": "UNLICENSED",
@@ -13,6 +12,7 @@
     "nodemon": "^2.0.7"
   },
   "devDependencies": {
+    "eslint": "^7.22.0",
     "lodash": "^4.17.21"
   }
 }
